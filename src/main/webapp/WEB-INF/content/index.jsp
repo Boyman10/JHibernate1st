@@ -10,7 +10,7 @@
 </h1>
 <h1><s:text name="greeting" /></h1>
 <p><a href="<s:url action='hello'/>">Hello World</a></p>
-<s:url action="senddata-input" var="dataInputLink" />
+<s:url action="send-data-input" var="dataInputLink" />
 <p><a href="${dataInputLink}">Please submit form</a> for us.</p>
 
 <hr />

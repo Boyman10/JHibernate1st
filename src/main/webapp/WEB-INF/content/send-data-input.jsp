@@ -10,7 +10,7 @@
 <body>
 <h1>PLease fill in details and click on submit button</h1>
 
-    <s:form action="senddata">
+    <s:form action="send-data">
       <s:textfield name="dataStoreBean.name" label="Full name" />
       <s:textfield name="dataStoreBean.message" label="Message" />
       <s:textfield name="dataStoreBean.email"  label ="Email"/>  

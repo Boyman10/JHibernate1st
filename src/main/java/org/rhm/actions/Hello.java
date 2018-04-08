@@ -19,7 +19,7 @@ public class Hello extends ActionSupport {
 	public String execute() {
 		
 		log.info("In execute method of class Hello");
-		//messageStore = new MessageStore();
+		messageStore = new MessageStore();
 		message = "Hello World, is this ok ???";
 		return SUCCESS; // At that time the matching page is being showned
 	}

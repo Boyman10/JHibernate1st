@@ -8,13 +8,14 @@ import org.rhm.model.DataStore;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+//https://struts.apache.org/plugins/convention/
 public class SendData extends ActionSupport {
 
 	private static final long serialVersionUID = -4163081726491187784L;
 	private static final Logger log = LogManager.getLogger(SendData.class);
 	private DataStore dataStoreBean;
 	
-	@Action("senddata-input")
+	@Action("send-data-input")
 	public String input() {
 		
         log.info("In input method of class SendDataAction");
