@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Submit this form</title>
+<s:head />
 </head>
 <body>
 <h1>PLease fill in details and click on submit button</h1>
