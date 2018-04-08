@@ -11,7 +11,7 @@ public class HelloWorldAction extends ActionSupport{
     public String execute() {
         messageStore = new MessageStore() ;
         
-        return SUCCESS;
+        return SUCCESS; // At that time the matching page is being showned
     }
 
     public MessageStore getMessageStore() {
