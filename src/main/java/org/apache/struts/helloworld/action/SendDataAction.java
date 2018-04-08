@@ -26,7 +26,6 @@ public class SendDataAction extends ActionSupport {
 		
 		log.info("In execute method of class SendDataAction");
 		
-		dataStoreBean = new DataStore();
 		//call Service class to store personBean's state in database
 		return SUCCESS;
 	}
