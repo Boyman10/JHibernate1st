@@ -6,8 +6,6 @@
 
 <struts>
 
-    <constant name="struts.devMode" value="true" />
-
     <package name="basicstruts2" extends="struts-default">
         <action name="index">
             <result>/index.jsp</result>
@@ -17,7 +15,7 @@
             <result name="success">/HelloWorld.jsp</result>
         </action>
         
-         <action name="data" class="org.apache.struts.helloworld.action.SendDataAction" method="execute">
+         <action name="senddata" class="org.apache.struts.helloworld.action.SendDataAction" method="execute">
             <result name="success">/thankyou.jsp</result>
         </action>
     </package>
