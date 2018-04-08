@@ -12,5 +12,8 @@
 <p><a href="<s:url action='hello'/>">Hello World</a></p>
 <s:url action="senddataInput" var="dataInputLink" />
 <p><a href="${dataInputLink}">Please submit form</a> for us.</p>
+
+<hr />
+<s:text name="contact" />
   </body>
 </html>

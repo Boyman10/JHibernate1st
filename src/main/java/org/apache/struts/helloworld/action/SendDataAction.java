@@ -26,18 +26,18 @@ public class SendDataAction extends ActionSupport {
 	}
 
 	
-	public void validate(){
-	    if (dataStoreBean.getName().length() == 0) {
-	        addFieldError("dataStoreBean.name", "Full name is required.");
-	    }
-
-	    if (dataStoreBean.getEmail().length() == 0) {
-	        addFieldError("dataStoreBean.email", "Email is required.");
-	    }
-
-	    if (dataStoreBean.getAge() < 18) {
-	        addFieldError("dataStoreBean.age", "Age is required and must be 18 or older");
-	    }
-	}
+//	public void validate(){
+//	    if (dataStoreBean.getName().length() == 0) {
+//	        addFieldError("dataStoreBean.name", "Full name is required.");
+//	    }
+//
+//	    if (dataStoreBean.getEmail().length() == 0) {
+//	        addFieldError("dataStoreBean.email", "Email is required.");
+//	    }
+//
+//	    if (dataStoreBean.getAge() < 18) {
+//	        addFieldError("dataStoreBean.age", "Age is required and must be 18 or older");
+//	    }
+//	}
 
 }
