@@ -12,6 +12,7 @@ public class SendDataAction extends ActionSupport {
 	
 	public String execute() throws Exception {
 		
+		dataStoreBean = new DataStore();
 		//call Service class to store personBean's state in database
 		return SUCCESS;
 	}
