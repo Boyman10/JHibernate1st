@@ -10,7 +10,7 @@
     <h3>Thank you for submitting the form.</h3>
 
     <p>Your registration information: <s:property value="dataStoreBean" /> </p>
-
+	<s:text name="thankyou" />
     <p><a href="<s:url action='index' />" >Return to home page</a>.</p>
   </body>
 </html>
