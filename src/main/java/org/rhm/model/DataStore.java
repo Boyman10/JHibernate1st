@@ -1,4 +1,4 @@
-package org.apache.struts.helloworld.model;
+package org.rhm.model;
 
 /**
  * Data store model class being used to match the submission of an online form

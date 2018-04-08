@@ -1,16 +1,17 @@
-package org.apache.struts.helloworld.action;
+package org.rhm.actions;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.struts.helloworld.model.DataStore;
 import org.apache.struts2.convention.annotation.Action;
+import org.rhm.model.DataStore;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class SendDataAction extends ActionSupport {
+public class SendData extends ActionSupport {
 
 	private static final long serialVersionUID = -4163081726491187784L;
-	private static final Logger log = LogManager.getLogger(SendDataAction.class);
+	private static final Logger log = LogManager.getLogger(SendData.class);
 	private DataStore dataStoreBean;
 	
 	@Action("senddata-input")
@@ -20,7 +21,6 @@ public class SendDataAction extends ActionSupport {
 
         return INPUT;
 	}
-	
 	
 	public String execute() throws Exception {
 		

@@ -1,4 +1,4 @@
-package org.apache.struts.helloworld.service;
+package org.rhm.services;
 
 /**
  * Service class to manipulate our DataStore beans
