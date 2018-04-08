@@ -10,10 +10,10 @@
 <h1>PLease fill in details and click on submit button</h1>
 
     <s:form action="senddata">
-      <s:textfield name="datastoreBean.name" label="Full name" />
-      <s:textfield name="datastoreBean.message" label="Message" />
-      <s:textfield name="datastoreBean.email"  label ="Email"/>  
-      <s:textfield name="datastoreBean.age"  label="Age"  />
+      <s:textfield name="dataStoreBean.name" label="Full name" />
+      <s:textfield name="dataStoreBean.message" label="Message" />
+      <s:textfield name="dataStoreBean.email"  label ="Email"/>  
+      <s:textfield name="dataStoreBean.age"  label="Age"  />
       <s:submit/>
     </s:form>
 
