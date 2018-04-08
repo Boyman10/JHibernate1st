@@ -8,7 +8,7 @@
 <h1>
   Welcome to Struts2
 </h1>
-
+<h1><s:text name="greeting" /></h1>
 <p><a href="<s:url action='hello'/>">Hello World</a></p>
 <s:url action="senddataInput" var="dataInputLink" />
 <p><a href="${dataInputLink}">Please submit form</a> for us.</p>
