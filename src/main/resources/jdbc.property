@@ -1,0 +1,3 @@
+jdbc.user=test
+jdbc.password=1234
+jdbc.driver = org.postgresql.Driver
