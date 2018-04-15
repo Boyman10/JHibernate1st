@@ -12,6 +12,9 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<struts2.version>2.5.14.1</struts2.version>
 		<log4j2.version>2.10.0</log4j2.version>
+
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 	<packaging>war</packaging>
 	<name>struts-hibernate Maven Webapp</name>
@@ -81,20 +84,13 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-dao</artifactId>
+			<version>5.0.4.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+			<version>42.2.1</version>
         </dependency>
 
 	</dependencies>

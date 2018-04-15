@@ -21,7 +21,7 @@ public class AddDataService {
         System.out.println("Loading our service " + this.getClass().getSimpleName());
     }
 
-    public void setDataStoreDao(dataStoreDao dtStDao) {
+    public void setDataStoreDao(DataStoreDao dtStDao) {
 
         this.dtDao = dtStDao;
     }
