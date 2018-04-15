@@ -1,15 +1,13 @@
 package org.rhm.model;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.rhm.utilities.MyLogger;
 
 public class MessageStore {
     private String message;
-    private static final Logger log = LogManager.getLogger(MessageStore.class);
-    
+
     public MessageStore() {
         message = "Hello Struts User";
-        log.info("Success loading Message Store constructor...");
+        MyLogger.log.info("Success loading Message Store constructor...");
     }
 
     public String getMessage() {

@@ -5,6 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Hello World!</title>
+    <s:head />
   </head>
   <body>
     <h2><s:property value="messageStore.message" /></h2>
