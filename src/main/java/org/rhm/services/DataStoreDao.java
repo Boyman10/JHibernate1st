@@ -39,6 +39,7 @@ public class DataStoreDao {
     @Transactional
     public boolean addDataStore(DataStore dts) {
 
+        MyLogger.log.debug("+++++++++ Before bean property...");
         BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(dts);
 
         MyLogger.log.debug("We are writing the data within the DB");

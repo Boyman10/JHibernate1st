@@ -38,7 +38,14 @@ public class DataStore {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "DataStore{" +
+				"name='" + name + '\'' +
+				", message='" + message + '\'' +
+				", age=" + age +
+				", email='" + email + '\'' +
+				'}';
+	}
 }

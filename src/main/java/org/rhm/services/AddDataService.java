@@ -1,6 +1,8 @@
 package org.rhm.services;
 
 import org.rhm.model.DataStore;
+import org.rhm.utilities.MyLogger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,16 +19,20 @@ public class AddDataService {
      * Consctructor class
      */
     public AddDataService(){
-
-        System.out.println("Loading our service " + this.getClass().getSimpleName());
+// + this.getClass().getSimpleName()
+        MyLogger.log.debug("+++++++++ Loading our service ");
     }
 
+    @Autowired
     public void setDataStoreDao(DataStoreDao dtStDao) {
 
+        MyLogger.log.debug("+++++++++ SEtting up DAtaStore DAO");
         this.dtDao = dtStDao;
     }
 
     public void addData(DataStore dt) {
+
+        MyLogger.log.debug("+++++++++ Adding data ");
         dtDao.addDataStore(dt);
     }
 }
