@@ -12,6 +12,7 @@ public class DataStore {
 	private String message;
 	private int age;
 	private String email;
+	private String password;
 	
 	
 	public String getName() {
@@ -38,7 +39,13 @@ public class DataStore {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String email) {
+		this.password = password;
+	}
+	
 	@Override
 	public String toString() {
 		return "DataStore{" +
