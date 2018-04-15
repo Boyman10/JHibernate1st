@@ -14,6 +14,7 @@ import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Class handling DAO using POstgresql
@@ -66,5 +67,33 @@ public class DataStoreDao {
 
         );
 
+    }
+
+    /**
+     * Method checking the login details
+     * @param obj
+     * @return
+     */
+    public DataStore matchDataStore(DataStore obj) {
+
+        jdbc.query("SELECT id FROM datastore", new RowMapper<DataStore>() {
+
+                    public DataStore mapRow(ResultSet rs, int nRows) throws SQLException {
+
+                        DataStore dts = new DataStore();
+                        dts.setPassword(rs.getString("password"));
+                        dts.setEmail(rs.getString("email"));
+
+                        MyLogger.log.debug("Matching data with DB : " + dts);
+
+                        return dts;
+                    }
+
+
+                }
+
+        );
+
+        return null;
     }
 }

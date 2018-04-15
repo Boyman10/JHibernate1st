@@ -42,4 +42,23 @@ public class AddDataService {
             MyLogger.log.error("Error data access exception " + e.getMessage());
         }
     }
+
+    /**
+     * Use this method to match login form data to an existing db entry
+     * @return
+     */
+    public DataStore matchUserData(DataStore dt) {
+
+        MyLogger.log.debug("+++++++++ Matching login data ");
+
+        try {
+
+            return dtDao.matchDataStore(dt);
+
+        } catch (DataAccessException e) {
+            MyLogger.log.error("Error data access exception " + e.getMessage());
+            return null;
+        }
+
+    }
 }
