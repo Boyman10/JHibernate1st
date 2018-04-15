@@ -42,10 +42,23 @@ public class DataStore {
 	public String getPassword() {
 		return password;
 	}
-	public void setPassword(String email) {
-		this.password = password;
+
+	/**
+	 * Setting up password - randomly
+	 * @param password
+	 */
+	public void setPassword(String password) {
+
+		if (password.isEmpty()) {
+
+			// random characters :
+			this.password = "1234";
+
+		} else {
+			this.password = password;
+		}
 	}
-	
+
 	@Override
 	public String toString() {
 		return "DataStore{" +
