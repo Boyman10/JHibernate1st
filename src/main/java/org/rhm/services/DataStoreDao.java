@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository("DataStoreDao")
 public class DataStoreDao {
 
-    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
+    private NamedP
 }
