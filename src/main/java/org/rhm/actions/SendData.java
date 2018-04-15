@@ -35,7 +35,9 @@ public class SendData extends ActionSupport {
 
 
 		//call Service class to store Bean's state in database
-		this.dtService.addData(this.dataStoreBean);
+
+        this.dtService.addData(this.dataStoreBean);
+
 
 		return SUCCESS;
 	}

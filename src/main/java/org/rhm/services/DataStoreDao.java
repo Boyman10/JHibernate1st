@@ -43,7 +43,7 @@ public class DataStoreDao {
         BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(dts);
 
         MyLogger.log.debug("We are writing the data within the DB");
-        return jdbc.update("INSERT INTO datastore(fullname,email,message,age) values(:fullname,:email,:message,:age)", params) == 1;
+        return jdbc.update("INSERT INTO datastore(fullname,email,message,age) values(:name,:email,:message,:age)", params) == 1;
     }
 
     public List<DataStore> getDataStores() {

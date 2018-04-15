@@ -3,6 +3,8 @@ package org.rhm.services;
 import org.rhm.model.DataStore;
 import org.rhm.utilities.MyLogger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.support.incrementer.MySQLMaxValueIncrementer;
 import org.springframework.stereotype.Service;
 
 /**
@@ -33,6 +35,11 @@ public class AddDataService {
     public void addData(DataStore dt) {
 
         MyLogger.log.debug("+++++++++ Adding data ");
-        dtDao.addDataStore(dt);
+
+        try {
+            dtDao.addDataStore(dt);
+        } catch (DataAccessException e) {
+            MyLogger.log.error("Error data access exception " + e.getMessage());
+        }
     }
 }

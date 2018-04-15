@@ -8,6 +8,8 @@
 <context:annotation-config></context:annotation-config>
     <context:component-scan base-package="org.rhm.services"></context:component-scan>
 
+    <context:property-placeholder location="jdbc.propeties"></context:property-placeholder>
+
     <jee:jndi-lookup jndi-name="jdbc/postgres" id="dataSource"
                      expected-type="javax.sql.DataSource">
     </jee:jndi-lookup>
