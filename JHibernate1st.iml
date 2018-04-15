@@ -58,9 +58,12 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.10.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts2-spring-plugin:2.5.14.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts2-convention-plugin:2.5.14.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:5.2" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-commons:5.2" level="project" />
@@ -68,8 +71,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-dao:unknown" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:unknown" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:unknown" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:unknown" level="project" />
   </component>
 </module>
