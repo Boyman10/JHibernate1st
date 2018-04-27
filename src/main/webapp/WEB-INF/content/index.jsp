@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Wouuu</title>
+    <s:head />
   </head>
   <body>
 <h1>
@@ -15,5 +16,7 @@
 
 <hr />
 <s:text name="contact" />
+
+<p><a href="<s:url action='hello-world-input'/>">Hello World</a></p>
   </body>
 </html>
