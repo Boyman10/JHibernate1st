@@ -13,8 +13,8 @@
 		<struts2.version>2.5.14.1</struts2.version>
 		<log4j2.version>2.10.0</log4j2.version>
         <spring.version>5.0.4.RELEASE</spring.version>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<packaging>war</packaging>
 	<name>struts-hibernate Maven Webapp</name>

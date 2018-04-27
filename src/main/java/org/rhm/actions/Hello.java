@@ -6,6 +6,9 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.rhm.utilities.MyLogger;
 import org.springframework.stereotype.Controller;
 
+/**
+ * No need to declare the route as hello - automatic with struts convention plugin -> hello
+ */
 @Controller
 public class Hello extends ActionSupport {
 	
